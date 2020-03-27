@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
+import { FloatingButton } from 'preqin'
 
-import ExampleComponent from 'preqin'
-
-export default class App extends Component {
-  render () {
-    return (
-      <div>
-        <ExampleComponent text='Modern React component module' />
-      </div>
-    )
-  }
+const App = () => {
+  return (
+    <div>
+      <FloatingButton 
+        onClick={() => console.log('Helooooooooo')}
+        color="red"
+      />
+    </div>
+  );
 }
+
+export default React.memo(App);
